@@ -4,9 +4,6 @@
 #GOODBYE :)
 
 
-
-
-
 import math
 import cv2
 import mediapipe as mp
@@ -65,30 +62,15 @@ while True:
             if distance < threshold_distance:
                 if not is_sound_on:
                     # Sound is currently off, turn it on
-                    pyautogui.press("volumeup")
-                    pyautogui.press("volumeup")
-                    pyautogui.press("volumeup")
-                    pyautogui.press("volumeup")
-                    pyautogui.press("volumeup")
-                    pyautogui.press("volumeup")
-                    pyautogui.press("volumeup")
-                    pyautogui.press("volumeup")
-                    pyautogui.press("volumeup")
                     pyautogui.press("volumeup")  # Adjust the appropriate key as per your system
+                    # Example: if you want to press the space key every time you open and close it, you can change it with the following code
                     is_sound_on = True
             else:
                 if is_sound_on:
                     # Sound is currently on, turn it off
-                    pyautogui.press("volumedown")
-                    pyautogui.press("volumedown")
-                    pyautogui.press("volumedown")
+                   
                     pyautogui.press("volumedown")  # Adjust the appropriate key as per your system
-                    pyautogui.press("volumedown")
-                    pyautogui.press("volumedown")
-                    pyautogui.press("volumedown")
-                    pyautogui.press("volumedown")
-                    pyautogui.press("volumedown")
-                    pyautogui.press("volumedown")
+                    # Example: if you want to press the space key every time you open and close it, you can change it with the following code
                     is_sound_on = False
 
             # Draw hand landmarks on the frame
