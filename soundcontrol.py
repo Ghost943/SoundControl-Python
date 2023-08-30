@@ -2,6 +2,9 @@
 #This project is a very simple project to control the volume on and off with hand gestures
 #And this is my first Github post I'll try to post new stuff 
 #GOODBYE :)
+"""
+code will only increase the volume by 2 notches. If you want to increase or decrease it more, you can use the following code: 'pyautogui.press("volumeup")' and 'pyautogui.press("volumedown")'. The more you repeat it, the more the volume will be increased or decreased.
+"""
 
 
 import math
